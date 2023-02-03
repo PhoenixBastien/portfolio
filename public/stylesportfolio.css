@@ -5,14 +5,9 @@ body {
     background-color: whitesmoke;
 }
 
-#col1 {
+#col {
     float: left;
-    width: 35%;
-}
-
-#col2 {
-    float: left;
-    width: 65%;
+    width: 50%;
 }
 
 .row:after {
