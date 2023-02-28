@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Phoenix Bastien's Bomb Portfolio</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="stylesportfolio.css">
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     </head>
     <body>
-        <div id="header">
-            <h1 id="name">    
-                Phoenix <span id="last">Bastien</span>
-            </h1>
-            <p id="info">
-                <a href="mailto:phoenixbastien@gmail.com">phoenixbastien@gmail.com</a> | (873) 353-7790 | Ottawa-Gatineau
-            </p>
-            <button>
-                <a href="resume.html">Go to resume</a>
-            </button>
-        </div>
-        <HR>
-        <div class="row">
-            <div class="column" id="col">
-                <div id="portfolio">
-                    <h2>PORTFOLIO</h2>
-                    <div>
-                        <a href="https://github.com/uOttawa-SEG2505-Fall2021/novigrad-project---part-1-g04"><h3>ANDROID APP</h3></a>
-                        <h5>Java, XML, Firebase, Android Studio | September - December 2021</h5>
-                        <h6>Android app that simulates a service-providing system that includes login, create, edit, search, delete, and rating features</h6>
-                        <ul class="tasks" align="justify">
-                            <li>Designed and implemented the front-end interface for users, employees, and administrators.</li>
-                            <li>Developed an Android app with user authentication and persistent interactive data using Firebase.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="https://github.com/PhoenixBastien/super-duper-invention"><h3>SQL DATABASE DESKTOP APP</h3></a>
-                        <h5>MySQL, Java, SQL | January - April 2022</h5>
-                        <h6>Desktop app that simulates a dental clinic’s management system and that manages appointments and related activities</h6>
-                        <ul class="tasks" align="justify">
-                            <li>Developed the back-end code to handle interactions with the SQL database.</li>
-                            <li>Used MySQL to manage the database.</li>
-                        </ul>
-                    </div>
+        <div class="resume">
+            <div class="base">
+              <div class="profile">
+                <div class="photo">
+                  <i class="fa-brands fa-phoenix-squadron"></i>
+                </div>
+                <div class="info">
+                  <h1 class="name">Phoenix Bastien</h1>
+                  <h2 class="job">Computer Science & Mathematics Student</h2>
+                </div>
+              </div>
+              <div class="about">
+                <h3>About Me</h3>
+                Insert cringe here
+              </div>
+              <div class="contact">
+                <h3>Contact Info</h3>
+                <div class="email"><a href="mailto:phoenixbastien@gmail.com"><i class="fa fa-envelope"></i><span>phoenixbastien@gmail.com</span></a></div>
+                <div class="call"><a href="tel:873-353-7790"><i class="fa fa-phone"></i><span>873-353-7790</span></a></div>
+                <div class="address"><a href="https://goo.gl/maps/EGL6Mv89n3imBYEZ8"><i class="fa fa-map-marker"></i><span>Gatineau, Québec</span></a></div>
+              </div>
+              <div class="links">
+                <h3>Links</h3>
+                <div class="box">
+                  <a href="https://www.github.com/PhoenixBastien"><i class="fa-brands fa-github"></i><br><small>GitHub</small></a>
+                  <a href="https://www.linkedin.com/in/phoenixbastien"><i class="fa-brands fa-linkedin"></i><br><small>LinkedIn</small></a>
+                  <a href="resume.html"><i class="fa fa-file"></i><br><small>Resume</small></a>
+                </div>
+              </div>
+              <div class="languages">
+                <h3>Languages</h3>
+                English<br>
+                French
+              </div>
             </div>
-        </div>
+            <div class="func">
+              <div class="projects">
+                <h3><i class="fa fa-project-diagram"></i>Projects</h3>
+                <ul>
+                  <li class="collapsible"><span>Web App</span><small>JavaScript, HTML5, CSS3</small><small>February 2023</small><small>Custom reproduction of Wordle</small></li>
+                  <div class="content">
+                    <ul>
+                      <li>Created a personalized version of the popular game Wordle by the New York Times.</li>
+                      <li>Designed and implemented the front-end with custom colours, fonts, and animations.</li>
+                      <li>Developed the back-end code for the functions of the game.</li>
+                    </ul>
+                  </div>
+                  <li class="collapsible"><span>Android App</span><small>Java, XML, Firebase, Android Studio</small><small>September - December 2021</small><small>Android app that simulates a service-providing system that includes login, create, edit, search, delete, and rating features</small></li>
+                  <div class="content">
+                    <ul>
+                      <li>Designed and implemented the front-end interface for users, employees, and administrators.</li>
+                      <li>Developed an Android app with user authentication and persistent interactive data using Firebase.</li>
+                    </ul>
+                  </div>
+                  <li class="collapsible"><span>SQL Database Desktop App</span><small>MySQL, Java</small><small>January - April 2022</small><small>Desktop app that simulates a dental clinic's management system and that manages appointments and related activities</small></li>
+                  <div class="content">
+                    <ul>
+                      <li>Developed the back-end code to handle interactions with the SQL database.</li>
+                      <li>Used MySQL to manage the database.</li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+          <script>
+            let collapsible = document.getElementsByClassName("collapsible");
+
+            for (let i = 0; i < collapsible.length; i++) {
+              collapsible[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+          </script>
     </body>
 </html>
