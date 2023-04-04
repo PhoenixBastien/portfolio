@@ -11,83 +11,91 @@
     </head>
     <body>
         <div class="resume">
-            <div class="base">
-              <div class="profile">
+        <div class="base">
+            <div class="profile">
                 <div class="photo">
-                  <i class="fa-brands fa-phoenix-squadron"></i>
+                    <i class="fa-brands fa-phoenix-squadron"></i>
                 </div>
                 <div class="info">
-                  <h1 class="name">Phoenix Bastien</h1>
-                  <h2 class="job">Computer Science & Mathematics Student</h2>
+                    <h1 class="name">Phoenix Bastien</h1>
+                    <h2 class="job">Computer Science & Mathematics Student</h2>
                 </div>
-              </div>
-              <div class="about">
+            </div>
+            <div class="about">
                 <h3>About Me</h3>
                 Insert cringe here
-              </div>
-              <div class="contact">
+            </div>
+            <div class="contact">
                 <h3>Contact Info</h3>
                 <div class="email"><a href="mailto:phoenixbastien@gmail.com"><i class="fa fa-envelope"></i><span>phoenixbastien@gmail.com</span></a></div>
                 <div class="call"><a href="tel:873-353-7790"><i class="fa fa-phone"></i><span>873-353-7790</span></a></div>
                 <div class="address"><a href="https://goo.gl/maps/q66jkzVLFCMXxCM2A"><i class="fa fa-map-marker"></i><span>Gatineau, Québec</span></a></div>
-              </div>
-              <div class="links">
+            </div>
+            <div class="links">
                 <h3>Links</h3>
                 <div class="box">
-                  <a href="https://www.github.com/PhoenixBastien"><i class="fa-brands fa-github"></i><br><small>GitHub</small></a>
-                  <a href="https://www.linkedin.com/in/phoenixbastien"><i class="fa-brands fa-linkedin"></i><br><small>LinkedIn</small></a>
-                  <a href="resume.html"><i class="fa fa-file"></i><br><small>Resume</small></a>
+                    <a href="https://www.github.com/PhoenixBastien"><i class="fa-brands fa-github"></i><br><small>GitHub</small></a>
+                    <a href="https://www.linkedin.com/in/phoenixbastien"><i class="fa-brands fa-linkedin"></i><br><small>LinkedIn</small></a>
+                    <a href="resume.html"><i class="fa fa-file"></i><br><small>Resume</small></a>
                 </div>
-              </div>
-              <div class="languages">
+            </div>
+            <div class="languages">
                 <h3>Languages</h3>
                 English<br>
                 French
-              </div>
             </div>
-            <div class="func">
-              <div class="projects">
-                <h3><i class="fa fa-project-diagram"></i>Projects</h3>
-                <ul>
-                  <li class="collapsible"><span>Web App</span><small>JavaScript, HTML5, CSS3, PHP | February - March 2023</small><small>Custom reproduction of Wordle</small></li>
-                  <div class="content">
+        </div>
+        <div class="func">
+        <div class="projects">
+            <h3><i class="fa fa-project-diagram"></i>Projects</h3>
+            <ul>
+                <li class="collapsible"><span>Web App</span><small>HTML5, CSS3, PHP, MySQL | March - April 2023</small><small>Web app that simulates a hospital's emergency waitlist management system</small></li>
+                <div class="content">
                     <ul>
-                      <li>Created a personalized version of the popular game Wordle by the New York Times.</li>
-                      <li>Designed and implemented the front-end with custom colours, fonts, and animations.</li>
-                      <li>Developed the back-end code for the functions of the game.</li>
-                      <li>Implemented game state in PHP server.</li>
+                        <li>Designed the interface with HTML/CSS.</li>
+                        <li>Used PHP for the server-side interactions.</li>
+                        <li>Used MySQL to manage the database.</li>
                     </ul>
-                  </div>
-                  <li class="collapsible"><span>Android App</span><small>Java, XML, Firebase, Android Studio | September - December 2021</small><small>Android app that simulates a service-providing system that includes login, create, edit, search, delete, and rating features</small></li>
-                  <div class="content">
+                </div>
+                <li class="collapsible"><span>Web Game</span><small>JavaScript, HTML5, CSS3, PHP | February - March 2023</small><small>Custom reproduction of Wordle</small></li>
+                <div class="content">
                     <ul>
-                      <li>Designed and implemented the front-end interface for users, employees, and administrators.</li>
-                      <li>Developed an Android app with user authentication and persistent interactive data using Firebase.</li>
+                        <li>Created a personalized version of the popular game Wordle by the New York Times.</li>
+                        <li>Designed and implemented the front-end with custom colours, fonts, and animations.</li>
+                        <li>Developed the back-end code for the functions of the game.</li>
+                        <li>Implemented game state in PHP server.</li>
                     </ul>
-                  </div>
-                  <li class="collapsible"><span>SQL Database Desktop App</span><small>MySQL, Java | January - April 2022</small><small>Desktop app that simulates a dental clinic's management system and that manages appointments and related activities</small></li>
-                  <div class="content">
+                </div>
+                <li class="collapsible"><span>Android App</span><small>Java, XML, Firebase, Android Studio | September - December 2021</small><small>Android app that simulates a service-providing system that includes login, create, edit, search, delete, and rating features</small></li>
+                <div class="content">
                     <ul>
-                      <li>Developed the back-end code to handle interactions with the SQL database.</li>
-                      <li>Used MySQL to manage the database.</li>
+                        <li>Designed and implemented the front-end interface for users, employees, and administrators.</li>
+                        <li>Developed an Android app with user authentication and persistent interactive data using Firebase.</li>
                     </ul>
-                  </div>
-                </ul>
-              </div>
-          <script>
+                </div>
+                <li class="collapsible"><span>SQL Database Desktop App</span><small>MySQL, Java | January - April 2022</small><small>Desktop app that simulates a dental clinic's management system and that manages appointments and related activities</small></li>
+                <div class="content">
+                    <ul>
+                        <li>Developed the back-end code to handle interactions with the SQL database.</li>
+                        <li>Used MySQL to manage the database.</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <script>
             let collapsible = document.getElementsByClassName("collapsible");
-
+            
             for (let i = 0; i < collapsible.length; i++) {
-              collapsible[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-                } 
-              });
+                collapsible[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
             }
-          </script>
+        </script>
     </body>
 </html>
