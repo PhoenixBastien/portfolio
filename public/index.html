@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
@@ -52,7 +52,7 @@
                 <li class="collapsible"><span>Web App</span><small>HTML5, CSS3, PHP, MySQL | March - April 2023</small><small>Web app that simulates a hospital's emergency waitlist management system</small></li>
                 <div class="content">
                     <ul>
-                        <li>Designed the interface with HTML/CSS.</li>
+                        <li>Designed and implemented the front-end interface for admins and patients with HTML/CSS.</li>
                         <li>Used PHP for the server-side interactions.</li>
                         <li>Used MySQL to manage the database.</li>
                     </ul>
@@ -82,20 +82,6 @@
                 </div>
             </ul>
         </div>
-        <script>
-            let collapsible = document.getElementsByClassName("collapsible");
-            
-            for (let i = 0; i < collapsible.length; i++) {
-                collapsible[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    } 
-                });
-            }
-        </script>
+        <script src="assets/index.js"></script>
     </body>
 </html>

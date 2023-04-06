@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Resume</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
@@ -140,20 +140,6 @@
                 </div>
             </ul>
         </div>
-        <script>
-            let collapsible = document.getElementsByClassName("collapsible");
-            
-            for (let i = 0; i < collapsible.length; i++) {
-                collapsible[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    } 
-                });
-            }
-        </script>
+        <script src="assets/index.js"></script>
     </body>
 </html>
